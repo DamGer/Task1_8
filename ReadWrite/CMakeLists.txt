@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(ReadWrite)
+set(SOURCES ReadWrite.cpp)
+set(HEADERS ReadWrite.h)
+add_library(ReadWrite STATIC ${SOURCES} ${HEADERS})
+target_include_directories(ReadWrite PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
